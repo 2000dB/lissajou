@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <title>Lissajou curve test</title>
+    <script type="text/javascript" src="curves.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <style type="text/css" media="screen">
+
+      body {
+	  background-color: #fff;
+      }
+
+      .wrapper
+      {
+          position: absolute;
+          width: 50vw;
+          height: 50vh;
+          top: 1vh;
+          left: 50%;
+          transform: translate(-50%, 0%);
+          margin: 0;
+      }
+      
+      #canvas
+      {
+          position: relative;
+          width: 100%;
+          margin: 0 auto;
+      }
+
+
+      </style>
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <canvas id="canvas" width="202" height="202"></canvas>
+    </div>
+    
+    <script type="application/javascript">
+      $(document).ready(function() {
+      init();
+      });
+    </script>
+    
+  </body>
+</html>
